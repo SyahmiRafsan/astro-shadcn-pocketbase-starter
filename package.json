@@ -1,0 +1,37 @@
+{
+  "name": "astro-shadcn-pocketbase-starter",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "pb": "./pb/pocketbase serve",
+    "dev": "concurrently \"bun run pb\" \"astro dev\"",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "typegen": "cd pb && pocketbase-typegen --db ./pb_data/data.db",
+    "server": "node ./dist/server/entry.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/node": "^8.3.4",
+    "@astrojs/react": "^4.0.0",
+    "@astrojs/tailwind": "^5.1.3",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@types/react": "^18.3.14",
+    "@types/react-dom": "^18.3.2",
+    "astro": "^5.0.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "pocketbase": "^0.22.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss": "^3.4.16",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "pocketbase-typegen": "^1.3.0"
+  }
+}
