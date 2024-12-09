@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "pb": "./pb/pocketbase serve",
+    "pb:update": "./pb/pocketbase update",
     "dev": "concurrently \"bun run pb\" \"astro dev\"",
     "build": "astro build",
     "preview": "astro preview",
